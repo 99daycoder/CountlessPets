@@ -60,11 +60,10 @@ export async function createQuote(newQuote) {
   }
 
   let newQuotePrice = price(newQuote);
-  let priceOfQuote = `£` + newQuotePrice;
+  let priceOfQuote =  newQuotePrice.toFixed(2);
+  let monthlyPrice = newQuotePrice/12
 
-  return `Your quote for insurance is ${priceOfQuote} paid monthly at ${
-    priceOfQuote / 12
-  }`;
+  return `Your quote for insurance is  £${priceOfQuote} and monthly price is £${monthlyPrice} per month`;
 }
 
 // DELETE a quote by ID
