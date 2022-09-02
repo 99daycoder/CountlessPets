@@ -1,0 +1,112 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "meawwwww how can I help you?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["Bye", "See you later", "Goodbye"],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+      "responses": ["Happy to help!", "Any time!", "My pleasure"]
+    },
+    {
+      "tag": "iems",
+      "patterns": [
+        "What insurance do you have?",
+        "What kinds of insurance are there?",
+        "What do you sell?",
+        "Do you sell pet insurance?",
+        "Do you sell dog insurance?",
+        "Do you sell cat insurance?"
+      ],
+      "responses": [
+        "We sell pet insurance! Dog and cat insurance, and multi-pet insurance. Why not have a look at our products here: https://manypets.com/uk/pet-insurance/  "
+      ]
+    },
+    {
+      "tag": "payments",
+      "patterns": [
+        "Do you take credit cards?",
+        "Do you accept Mastercard?",
+        "Can I pay with Paypal?",
+        "Are you cash only?"
+      ],
+      "responses": [
+        "We accept VISA, Mastercard and Bank Transfer",
+        "We accept most major credit cards, and direct debit and bank transfer"
+      ]
+    },
+    {
+      "tag": "price",
+      "patterns": [
+        "What are your prices?",
+        "How much is your price?",
+        "How much does your pet insurance cost?",
+        "How much is your cat insurance?",
+        "How much does it cost to insurance my dog"
+      ],
+      "responses": [
+        "Our insurance policies start from as little as £10 / month. Use our easy tool to get a quote now: https://manypets.com/uk/pet-insurance/"
+      ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "What happens to a toad's car when it breaks down? It gets toad away.",
+        "What do cats have for breakfast? Mice Crispies", 
+        "Why are cats bad storytellers? Because they only have one tale",
+        "What do ducks watch on TV? Duck-umentaries!"
+      ]
+    },
+    {
+      "tag": "support",
+      "patterns": [
+        "support",
+        "Where do I get some help?",
+        "I need some help",
+        "Hoe do I contact you?"
+        
+      ],
+      "responses": [
+        "Please visit our website for more help https://manypets.com/"
+      ]
+    },
+    {
+      "tag": "dog breed",
+      "patterns": [
+        "What type of dog do you insure?",
+        "What breeds do you insure?",
+        "What breeds your insurance cover?",
+        "Are there any specific dog breeds you do not cover in your policy?"
+        
+      ],
+      "responses": [
+        "We are not able to cover dogs or cross-breed of dogs listed in the Dangerous Dogs Act 1991. The act considers Pit Bull Terriers, Japanese Tosa, Dogo Argentino and Fila Brasileiro to be dangerous dogs. The act also considers dogs that appear similar to these dogs as dangerous dogs."
+      ]
+    }
+  ]
+}
