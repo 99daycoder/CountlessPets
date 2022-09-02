@@ -15,6 +15,27 @@ export async function getQuotebyId(id) {
   return data.rows[0];
 }
 
+//[newQuote.pet_type, newQuote.pet_breed, newQuote.pet_age, newQuote.gender, newQuote.name,  newQuote.address, newQuote.city, newQuote.postcode, newQuote.number_of_pets ]
+
+//PATCH quote by ID
+export async function patchQuotebyId(newQuote, id) {
+  const data = await query(
+    `UPDATE quotes SET pet_type = $1, pet_breed = $2, pet_age = $3, gender = $4, name = $5,  address = $6, city = $7, postcode = $8, number_of_pets = $9 WHERE id = $10;`,
+    [
+      newQuote.pet_type,
+      newQuote.pet_breed,
+      newQuote.pet_age,
+      newQuote.gender,
+      newQuote.name,
+      newQuote.address,
+      newQuote.city,
+      newQuote.postcode,
+      newQuote.number_of_pets,
+      id,
+    ]
+  );
+}
+
 // Get price for Quote POST a quote REPLACE WITH CORRECT DATA
 export async function createQuote(newQuote) {
   console.log(newQuote);
@@ -33,7 +54,7 @@ export async function createQuote(newQuote) {
     ]
   );
   let validationResponse = await validation(newQuote);
-  console.log('********', validationResponse[0],validationResponse[1]) 
+  console.log("********", validationResponse[0], validationResponse[1]);
   if (validationResponse[0] === false || validationResponse[1] === false) {
     return `We couldn't validate your address and dog breed please try again.`;
   }
