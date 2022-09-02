@@ -1,14 +1,19 @@
 // basic strcuture for creating a table, may need tweaking
 
 import { pool } from '../index.js';
-
-const sqlString = `CREATE TABLE IF NOT EXISTS quotes_test1 (
+//Id, petType, petBreed, petAge, Gender,  Name, Address, City, PostCode, numberOfPets, 
+const sqlString = `CREATE TABLE IF NOT EXISTS quotes (
     id INT PRIMARY KEY GENERATED ALWAYS AS IDENTITY, 
     pet_type TEXT,
+    pet_breed TEXT,
+    pet_age TEXT,
+    gender TEXT, 
     name TEXT,
-    photo TEXT,
-    address TEXT, 
-    city TEXT
+    address TEXT,
+    city TEXT,
+    postcode TEXT,
+    number_of_pets INT
+
     );`;
 
 async function createQuotesTable(){

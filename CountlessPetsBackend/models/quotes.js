@@ -4,7 +4,7 @@ import { query } from "../db/index.js";
 
 export async function getAllQuotes() {
     const data = await query(`SELECT * FROM quotes`)
-    return data;
+    return data.rows;
 }
 
 // GET quote by ID
@@ -19,8 +19,8 @@ export async function getQuotebyId(id) {
 // Get price for Quote POST a quote REPLACE WITH CORRECT DATA
 export async function createQuote(newQuote) { 
     const data = await query(
-      `INSERT INTO quotes (category, name, rating, photo, address, longitude, latitude, accessible, eye, hearing, brain, phone_number, web_address, opening_times) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14) RETURNING *;`,
-      [newQuote.category, newQuote.name, newQuote.rating, newQuote.photo, newPlace.address, newPlace.longitude, newPlace.latitude, newPlace.accessible, newPlace.eye, newPlace.hearing, newPlace.brain, newPlace.phone_number, newPlace.web_address, newPlace.opening_times]
+      `INSERT INTO quotes (pet_type, pet_breed, pet_age, gender, name, address, city, postcode, number_of_pets) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *;`,
+      [newQuote.pet_type, newQuote.pet_breed, newQuote.pet_age, newQuote.gender, newQuote.address, newQuote.city, newQuote.postcode]
     );
     return data.rows[0];
   }

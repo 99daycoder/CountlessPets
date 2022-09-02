@@ -6,9 +6,7 @@ import cookieParser  from 'cookie-parser';
 import cors  from 'cors';
 import logger  from 'morgan';
 
-import placesRouter  from './routes/places.js';
-import reviewsRouter  from './routes/reviews.js';
-import favsRouter  from './routes/favs.js';
+import quotesRouter  from './routes/quotes.js';
 
 const app = express();
 
@@ -19,9 +17,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use('/favs', favsRouter);
-app.use('/reviews', reviewsRouter);
-app.use('/places', placesRouter);
+
+app.use('/quotes', quotesRouter);
 
 
 
