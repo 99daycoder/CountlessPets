@@ -1,0 +1,10 @@
+.how-to-work-together {
+  font-size: 1.3rem;
+  width: 80%;
+  margin: auto;
+}
+.how-to-work-together li {
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-family: 'Poppins';
+}

@@ -1,0 +1,68 @@
+{
+  "Lesson": [
+    {
+      "describe": "I love helping people",
+      "fullName": "Bob Doe",
+      "meetingLength": "90 minutes",
+      "meetingLink": "www.zoom.com",
+      "sessionTime": "2022-07-22T15:00",
+      "topic": "grid, flexbox, CSS"
+    },
+    {
+      "describe": "I eat cats for breakfast",
+      "fullName": "Mary Jane",
+      "meetingLength": "90 minutes",
+      "meetingLink": "www.googleteams.com",
+      "sessionTime": "2022-09-22T15:00",
+      "topic": "js methods, immutable methods"
+    },
+    {
+      "describe": "I eat cats for breakfast",
+      "fullName": "Mary Jane",
+      "meetingLength": "90 minutes",
+      "meetingLink": "www.googleteams.com",
+      "sessionTime": "2022-09-22T15:00",
+      "topic": "js methods, immutable methods"
+    },
+    {
+      "describe": "I eat cats for breakfast",
+      "fullName": "Mary Jane",
+      "meetingLength": "90 minutes",
+      "meetingLink": "www.googleteams.com",
+      "sessionTime": "2022-09-22T15:00",
+      "topic": "js methods, immutable methods"
+    },
+    {
+      "describe": "I love helping people",
+      "fullName": "Bob Doe",
+      "meetingLength": "90 minutes",
+      "meetingLink": "www.zoom.com",
+      "sessionTime": "2022-07-22T15:00",
+      "topic": "grid, flexbox, CSS"
+    },
+    {
+      "describe": "I eat cats for breakfast",
+      "fullName": "Mary Jane",
+      "meetingLength": "90 minutes",
+      "meetingLink": "www.googleteams.com",
+      "sessionTime": "2022-09-22T15:00",
+      "topic": "js methods, immutable methods"
+    },
+    {
+      "describe": "I eat cats for breakfast",
+      "fullName": "Mary Jane",
+      "meetingLength": "90 minutes",
+      "meetingLink": "www.googleteams.com",
+      "sessionTime": "2022-09-22T15:00",
+      "topic": "js methods, immutable methods"
+    },
+    {
+      "describe": "I eat cats for breakfast",
+      "fullName": "Mary Jane",
+      "meetingLength": "90 minutes",
+      "meetingLink": "www.googleteams.com",
+      "sessionTime": "2022-09-22T15:00",
+      "topic": "js methods, immutable methods"
+    }
+  ]
+}
