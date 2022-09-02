@@ -18,10 +18,12 @@ export async function getQuotebyId(id) {
 
 // Get price for Quote POST a quote REPLACE WITH CORRECT DATA
 export async function createQuote(newQuote) { 
+  console.log(newQuote)
     const data = await query(
       `INSERT INTO quotes (pet_type, pet_breed, pet_age, gender, name, address, city, postcode, number_of_pets) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *;`,
-      [newQuote.pet_type, newQuote.pet_breed, newQuote.pet_age, newQuote.gender, newQuote.address, newQuote.city, newQuote.postcode]
+      [newQuote.pet_type, newQuote.pet_breed, newQuote.pet_age, newQuote.gender, newQuote.name,  newQuote.address, newQuote.city, newQuote.postcode, newQuote.number_of_pets ]
     );
+    
     return data.rows[0];
   }
 
