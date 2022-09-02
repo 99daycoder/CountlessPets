@@ -32,7 +32,8 @@ export async function createQuote(newQuote) {
       newQuote.number_of_pets,
     ]
   );
-  let validationResponse = validation(newQuote);
+  let validationResponse = await validation(newQuote);
+  console.log('********', validationResponse[0],validationResponse[1]) 
   if (validationResponse[0] === false || validationResponse[1] === false) {
     return `We couldn't validate your address and dog breed please try again.`;
   }
