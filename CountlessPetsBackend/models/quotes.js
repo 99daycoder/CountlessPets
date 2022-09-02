@@ -1,4 +1,5 @@
 import { query } from "../db/index.js";
+import price from "./price.js";
 
 // GET all quotes
 
@@ -23,7 +24,8 @@ export async function createQuote(newQuote) {
       `INSERT INTO quotes (pet_type, pet_breed, pet_age, gender, name, address, city, postcode, number_of_pets) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *;`,
       [newQuote.pet_type, newQuote.pet_breed, newQuote.pet_age, newQuote.gender, newQuote.name,  newQuote.address, newQuote.city, newQuote.postcode, newQuote.number_of_pets ]
     );
-    
+    let newQuotePrice = price(newQuote)
+
     return data.rows[0];
   }
 
