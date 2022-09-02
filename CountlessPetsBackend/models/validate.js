@@ -23,6 +23,7 @@ async function validatePostcode(newQuote) {
 
 async function validateDogBreed(newQuote) {
   let dogList = [];
+ 
 
   const enteredBreed = newQuote.pet_breed.toLowerCase();
 
@@ -31,8 +32,8 @@ async function validateDogBreed(newQuote) {
 
   data.map((breed) => {
     let dogBreed = breed.name.toLowerCase();
-
     dogList.push(dogBreed);
+
   });
 
   //   console.log("outside", validatedBreed);
